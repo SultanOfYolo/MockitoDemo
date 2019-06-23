@@ -7,7 +7,7 @@ package org.mock.part_3;
 	  
 	  public boolean verifyPassword(String password) {
 		  _verifyPasswordRufAmount++;
-	      return "xiaochuang_is_handsome".equals(password);
+	      return "Lei_is_handsome".equals(password);
 	  }
 	  
 	  public int GetVerifyPasswordRufAmount() {

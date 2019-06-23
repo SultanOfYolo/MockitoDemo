@@ -76,12 +76,12 @@ public class MockitoTest {
         mockedList.add("three times");
         mockedList.add("three times");
 
-        // Set return value of .size() to 5
+        // Set return value of .size() to 3
         when(mockedList.size()) // On invocation of .size() ->
-                .thenReturn(5); // Return: 5
+                .thenReturn(3); // Return: 3
 
-        // Validate the return value of .size() == 5
-        assert 5 == mockedList.size();
+        // Validate the return value of .size() == 3
+        assert 3 == mockedList.size();
 
         // Verify .add("one") has been invoked one or more times
         verify(mockedList, atLeastOnce()) // Verifies invocation to a method at least one time
@@ -178,6 +178,8 @@ public class MockitoTest {
 
         // Verify that the argument captor instance has counted two items via .addAll()
         assert 2 == argumentCaptor.getValue().size();
+        
+        assert argumentCaptor.getValue() == list;
 
         // Verify each item from the original list created on the first line match the captured items
         // Done via list .equals() - Checking each item if equal

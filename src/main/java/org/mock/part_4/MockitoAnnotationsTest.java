@@ -1,4 +1,4 @@
-package org.mock.introTest;
+package org.mock.part_4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
