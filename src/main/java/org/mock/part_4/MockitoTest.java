@@ -179,6 +179,8 @@ public class MockitoTest {
 
         // Verify that the argument captor instance has counted two items via .addAll()
         assert 2 == argumentCaptor.getValue().size();
+        
+        assert argumentCaptor.getValue() == list;
 
         // Verify each item from the original list created on the first line match the captured items
         // Done via list .equals() - Checking each item if equal

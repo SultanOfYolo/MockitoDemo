@@ -17,6 +17,7 @@ public class SpyTest {
 	  
 	  //By default, the spy object will call the real logic of this class 
 	  //return the corresponding return value
+
 	  assert  spyValidator.verifyPassword("xiaochuang_is_handsome");
 	  assert !spyValidator.verifyPassword("xiaochuang_is_not_handsome");
 

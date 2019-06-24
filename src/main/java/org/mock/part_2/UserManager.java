@@ -2,7 +2,7 @@
 
 public class UserManager {
 
-	public void performLogin(String username, String password) {
+	public void callWebServiceSaveLoginData(String username, String password) {
 		// TODO Auto-generated method stub
 		
 	}
