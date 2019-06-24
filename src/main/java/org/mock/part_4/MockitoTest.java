@@ -1,11 +1,8 @@
 package org.mock.part_4;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.IntStream;
 
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
@@ -45,14 +42,14 @@ public class MockitoTest {
         Iterator mockedIterator = mock(Iterator.class);
 
         // Iterator method .next() should return "Hello!" and after that returns "Mockito!"
-        when(mockedIterator.next())      // On .next() method invocation -> return:
-                .thenReturn("Hello!")     // 1. Invocation -> returns "Hello"
-                .thenReturn("Mockito!"); // 2. Invocation -> returns "Mockito!"
+        when(mockedIterator.next())       // On .next() method invocation -> return:
+                .thenReturn("Hello!")     // 1. Invocation -> returns "Hello!"
+                .thenReturn("Mockito!");  // 2. Invocation -> returns "Mockito!"
 
-        // .next() been called two times, expected string in result := "Hello$Mockito!"
+        // .next() been called two times, expected string in result := "Hello!Mockito!"
         String result = String.format("%s%s", mockedIterator.next(), mockedIterator.next());
 
-        // Validate expected behavior and test result := "Hello, Mockito!"
+        // Validate expected behavior and test result := "Hello!Mockito!"
         assert "Hello!Mockito!".equals(result);
 
         // Attempt to throw an exception on a third .next() method invocation as the iterator should be at the end
@@ -76,12 +73,12 @@ public class MockitoTest {
         mockedList.add("three times");
         mockedList.add("three times");
 
-        // Set return value of .size() to 5
+        // Set return value of .size() to 3
         when(mockedList.size()) // On invocation of .size() ->
-                .thenReturn(5); // Return: 5
+                .thenReturn(3); // Return: 3
 
-        // Validate the return value of .size() == 5
-        assert 5 == mockedList.size();
+        // Validate the return value of .size() == 3
+        assert 3 == mockedList.size();
 
         // Verify .add("one") has been invoked one or more times
         verify(mockedList, atLeastOnce()) // Verifies invocation to a method at least one time
@@ -119,15 +116,19 @@ public class MockitoTest {
         verify(mockedList, times(2))
                 .add(objectVar);
 
-        // Expected to be empty after .add() invocations
+        // Default return value for int
         assert 0 == mockedList.size();
 
-        // Default values are being returned e.g. .isEmpty() returns false as default value
+        // Default values are being returned
         assert !mockedList.isEmpty();
 
         // Collection Framework is handled a bit different, e.g. subList returns non-null list object
         // instanceof checks for null and subtype
-        assert mockedList.subList(0, 1) instanceof List;
+        assert mockedList
+                .subList(
+                        ThreadLocalRandom.current().nextInt(),
+                        Integer.MIN_VALUE
+                ) instanceof List;
     }
 
     // Demo 5:
@@ -135,7 +136,7 @@ public class MockitoTest {
     // The new object delegates method calls directly to the underlying true object if no configuration/override is set
     @Test
     public void mockitoSpyWrapperBehaviorTest() {
-        List<String> spyList = spy(new LinkedList<String>());
+        List<String> spyList = spy(new LinkedList<>());
 
         // Override method .size() to return 100 on invocation
         when(spyList.size())
@@ -168,7 +169,7 @@ public class MockitoTest {
         List<String> mockedList = mock(List.class);
 
         // Generate the argument capture for list instance
-        ArgumentCaptor<List> argumentCaptor = ArgumentCaptor.forClass(List.class);
+        ArgumentCaptor<List<String>> argumentCaptor = ArgumentCaptor.forClass(List.class);
 
         // Invoke .addAll() on mockedList to add all items of list
         mockedList.addAll(list);
@@ -182,5 +183,50 @@ public class MockitoTest {
         // Verify each item from the original list created on the first line match the captured items
         // Done via list .equals() - Checking each item if equal
         assert list.equals(argumentCaptor.getValue());
+
+        // Reference check is true
+        assert list == argumentCaptor.getValue();
+    }
+
+    // Demo 7:
+    // Argument capture example for primitives
+    @Test
+    public void mockitoArgumentsCaptureTestPrimitives() {
+        final int sizeNumbers = 100;
+
+        // Some values in an int array
+        final int[] someNums = IntStream.rangeClosed(1, sizeNumbers).toArray();
+
+        // Define a local class definition to mock
+        // final or anonymous classes can not be mocked (Java stuff)
+        // Class object can be private, instance inner class or temporally defined as follows
+        class MyClazz {
+            // Method modifier must be package-private or public and not final
+            // -> private methods are Not accessible by the argumentCaptor! (Java stuff)
+            // -> final methods can not be overridden
+            void f(int x) {
+            }
+        }
+
+        // The argumentCaptor for int values
+        ArgumentCaptor<Integer> argumentCaptor = ArgumentCaptor.forClass(int.class);
+
+        // Generate a mocked consumer to simulate the functionality
+        MyClazz mockedMyClazz = mock(MyClazz.class);
+
+        for(int num : someNums)
+            mockedMyClazz.f(num);
+
+        // Retrieves the ints from the instance object which were passed to f.
+        verify(mockedMyClazz, times(someNums.length))
+                .f(argumentCaptor.capture());
+
+        // Validate the captor's stack of captured values
+        // Empties the stack (Side effect)
+        for(int num : someNums)
+            assert num == argumentCaptor.getAllValues().remove(0);
+
+        // Side effect -> manipulated captor's stack is empty now!
+        assert argumentCaptor.getAllValues().isEmpty();
     }
 }

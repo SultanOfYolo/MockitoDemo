@@ -1,4 +1,4 @@
-package org.mock.introTest;
+package org.mock.part_4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -87,6 +87,7 @@ public class MockitoAnnotationsTest {
         verify(this.captorMockedList).add(this.argCaptor.capture());
 
         assert objectVar.equals(this.argCaptor.getValue());
+        assert objectVar == this.argCaptor.getValue();
     }
 
     // Demo 4:
