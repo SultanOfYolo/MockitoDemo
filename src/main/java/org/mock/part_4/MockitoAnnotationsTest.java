@@ -86,8 +86,8 @@ public class MockitoAnnotationsTest {
         this.captorMockedList.add(objectVar);
         verify(this.captorMockedList).add(this.argCaptor.capture());
 
-        assert objectVar.equals(this.argCaptor.getValue());
-        assert objectVar == this.argCaptor.getValue();
+        assert objectVar.equals(this.argCaptor.getValue()); // Applies reference equality if not defined
+        assert objectVar == this.argCaptor.getValue(); // Reference equality is true
     }
 
     // Demo 4:

@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaad5c76-7a17-4512-a173-f7ef647e19f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/xtextAutoBuilderState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xtextAutoBuilderState.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mock/part_3/PasswordValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mock/part_3/PasswordValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mock/part_3/SpyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mock/part_3/SpyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mock/part_4/MockitoAnnotationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mock/part_4/MockitoAnnotationsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mock/part_4/MockitoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mock/part_4/MockitoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/mock/introTest/MockitoAnnotationsTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/mock/introTest/MockitoAnnotationsTest$FancyThing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/mock/introTest/MockitoAnnotationsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mock/part_1/LoginPresenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mock/part_1/LoginPresenterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mock/part_1/LoginPresenterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mock/part_1/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mock/part_1/UserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mock/part_2/LoginPresenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mock/part_2/PasswordValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mock/part_2/TestReturenValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mock/part_2/TestReturenValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mock/part_2/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mock/part_2/UserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mock/part_3/SpyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mock/part_3/SpyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mock/part_4/MockitoTest$1MyClazz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mock/part_4/MockitoTest$1MyClazz.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/mock/part_4/MockitoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mock/part_4/MockitoTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_4/MockitoAnnotationsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+            <state relative-caret-position="235">
+              <caret line="89" column="84" lean-forward="true" selection-start-line="89" selection-start-column="84" selection-end-line="89" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,16 +45,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_3/PasswordValidator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_4/MockitoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3585">
-              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="343">
+              <caret line="288" lean-forward="true" selection-start-line="288" selection-end-line="288" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,6 +69,7 @@
       <find>get</find>
       <find>spy</find>
       <find>LocalR</find>
+      <find>spy()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,8 +84,8 @@
         <option value="$PROJECT_DIR$/src/main/java/org/spy/sample/PasswordValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/mock/part_3/PasswordValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/mock/part_3/SpyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/mock/part_4/MockitoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/mock/part_4/MockitoAnnotationsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/mock/part_4/MockitoTest.java" />
       </list>
     </option>
   </component>
@@ -100,6 +101,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,7 +175,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,6 +184,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -199,25 +201,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpyTest">
+  <component name="RunManager" selected="JUnit.MockitoTest.mockitoAnswerHandling">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MockitoAnnotationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MockitoDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.mock.part_4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.mock.part_4" />
-      <option name="MAIN_CLASS_NAME" value="org.mock.part_4.MockitoAnnotationsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -239,7 +225,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MockitoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MockitoTest.mockitoAnswerHandling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MockitoDemo" />
       <extension name="coverage">
         <pattern>
@@ -249,7 +235,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.mock.part_4" />
       <option name="MAIN_CLASS_NAME" value="org.mock.part_4.MockitoTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="mockitoAnswerHandling" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MockitoTest.mockitoVoidHandling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MockitoDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mock.part_4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.mock.part_4" />
+      <option name="MAIN_CLASS_NAME" value="org.mock.part_4.MockitoTest" />
+      <option name="METHOD_NAME" value="mockitoVoidHandling" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -306,11 +310,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MockitoTest.mockitoAnswerHandling" />
+        <item itemvalue="JUnit.MockitoTest.mockitoVoidHandling" />
         <item itemvalue="JUnit.SpyTest" />
         <item itemvalue="JUnit.SpyTest.testSpy" />
         <item itemvalue="JUnit.MockitoAnnotationsTest.captorMockedListAnnotationTest" />
-        <item itemvalue="JUnit.MockitoTest" />
-        <item itemvalue="JUnit.MockitoAnnotationsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -330,50 +334,52 @@
       <workItem from="1561301706650" duration="24000" />
       <workItem from="1561301765866" duration="636000" />
       <workItem from="1561302578181" duration="988000" />
-      <workItem from="1561398028916" duration="6631000" />
+      <workItem from="1561398028916" duration="7079000" />
+      <workItem from="1561456862596" duration="1208000" />
+      <workItem from="1561483991042" duration="8787000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MockitoTest - 2019.06.24 at 20h 33m 10s.xml">
-      <configuration name="MockitoTest" configurationId="JUnit" />
+    <history-entry file="MockitoTest_mockitoAnswerHandling - 2019.06.25 at 21h 25m 30s.xml">
+      <configuration name="MockitoTest.mockitoAnswerHandling" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MockitoAnnotationsTest_captorMockedListAnnotationTest - 2019.06.24 at 20h 39m 56s.xml">
-      <configuration name="MockitoAnnotationsTest.captorMockedListAnnotationTest" configurationId="JUnit" />
+    <history-entry file="MockitoTest_mockitoAnswerHandling - 2019.06.25 at 21h 25m 53s.xml">
+      <configuration name="MockitoTest.mockitoAnswerHandling" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpyTest_testSpy - 2019.06.24 at 20h 46m 36s.xml">
-      <configuration name="SpyTest.testSpy" configurationId="JUnit" />
+    <history-entry file="MockitoTest_mockitoAnswerHandling - 2019.06.25 at 21h 26m 02s.xml">
+      <configuration name="MockitoTest.mockitoAnswerHandling" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpyTest_testSpy - 2019.06.24 at 20h 46m 48s.xml">
-      <configuration name="SpyTest.testSpy" configurationId="JUnit" />
+    <history-entry file="MockitoTest_mockitoAnswerHandling - 2019.06.25 at 21h 26m 42s.xml">
+      <configuration name="MockitoTest.mockitoAnswerHandling" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpyTest_testSpy - 2019.06.24 at 20h 48m 26s.xml">
-      <configuration name="SpyTest.testSpy" configurationId="JUnit" />
+    <history-entry file="MockitoTest_mockitoAnswerHandling - 2019.06.25 at 21h 27m 31s.xml">
+      <configuration name="MockitoTest.mockitoAnswerHandling" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpyTest_testSpy - 2019.06.24 at 20h 49m 38s.xml">
-      <configuration name="SpyTest.testSpy" configurationId="JUnit" />
+    <history-entry file="MockitoTest_mockitoAnswerHandling - 2019.06.25 at 21h 27m 48s.xml">
+      <configuration name="MockitoTest.mockitoAnswerHandling" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpyTest_testSpy - 2019.06.24 at 20h 50m 00s.xml">
-      <configuration name="SpyTest.testSpy" configurationId="JUnit" />
+    <history-entry file="MockitoTest_mockitoAnswerHandling - 2019.06.25 at 21h 29m 58s.xml">
+      <configuration name="MockitoTest.mockitoAnswerHandling" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpyTest_testSpy - 2019.06.24 at 23h 50m 35s.xml">
-      <configuration name="SpyTest.testSpy" configurationId="JUnit" />
+    <history-entry file="MockitoTest_mockitoAnswerHandling - 2019.06.25 at 21h 35m 40s.xml">
+      <configuration name="MockitoTest.mockitoAnswerHandling" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpyTest - 2019.06.24 at 23h 54m 57s.xml">
-      <configuration name="SpyTest" configurationId="JUnit" />
+    <history-entry file="MockitoTest_mockitoAnswerHandling - 2019.06.25 at 21h 38m 21s.xml">
+      <configuration name="MockitoTest.mockitoAnswerHandling" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpyTest - 2019.06.24 at 23h 56m 00s.xml">
-      <configuration name="SpyTest" configurationId="JUnit" />
+    <history-entry file="MockitoTest_mockitoAnswerHandling - 2019.06.25 at 21h 38m 28s.xml">
+      <configuration name="MockitoTest.mockitoAnswerHandling" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9794000" />
+    <option name="totallyTimeSpent" value="20237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -415,13 +421,7 @@
     <module2generated>rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAF3CAAAAAIAAAABdAALTW9ja2l0b0RlbW9zcgAvb3JnLmVjbGlwc2UueHRleHQuYnVpbGQuU291cmNlMkdlbmVyYXRlZE1hcHBpbmdgwc1G7ZGGygwAAHhwdwQAAAAAeHg=</module2generated>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_2/LoginPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_2/LoginPresenter.java" />
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_112/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -473,16 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_3/SpyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/concurrent/ThreadLocalRandom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -490,17 +480,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_1/LoginPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_1/LoginPresenter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_1/UserManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.0.111-beta/mockito-core-2.0.111-beta-sources.jar!/org/mockito/stubbing/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="1001" column="19" selection-start-line="1001" selection-start-column="19" selection-end-line="1001" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.0.111-beta/mockito-core-2.0.111-beta-sources.jar!/org/mockito/stubbing/Stubber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2329">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.0.111-beta/mockito-core-2.0.111-beta-sources.jar!/org/mockito/Mockito.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="2036" column="23" selection-start-line="2036" selection-start-column="23" selection-end-line="2036" selection-end-column="23" />
+          <folding>
+            <element signature="e#89914#89915#0" expanded="true" />
+            <element signature="e#89976#89977#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.0.111-beta/mockito-core-2.0.111-beta-sources.jar!/org/mockito/internal/creation/bytebuddy/MockMethodInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/function/BiFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="330" selection-start-line="330" selection-end-line="330" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.0.111-beta/mockito-core-2.0.111-beta-sources.jar!/org/mockito/internal/matchers/InstanceOf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.0.111-beta/mockito-core-2.0.111-beta-sources.jar!/org/mockito/ArgumentMatchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="193" column="24" selection-start-line="193" selection-start-column="24" selection-end-line="193" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.0.111-beta/mockito-core-2.0.111-beta-sources.jar!/org/mockito/internal/stubbing/StubbedInvocationMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_4/MockitoAnnotationsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="89" column="84" lean-forward="true" selection-start-line="89" selection-start-column="84" selection-end-line="89" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_3/SpyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -511,27 +596,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_1/HttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_1/LoginClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_3/PasswordValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_4/MockitoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3585">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/mock/part_4/MockitoAnnotationsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        <state relative-caret-position="343">
+          <caret line="288" lean-forward="true" selection-start-line="288" selection-end-line="288" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

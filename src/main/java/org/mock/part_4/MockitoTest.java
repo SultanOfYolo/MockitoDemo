@@ -2,6 +2,7 @@ package org.mock.part_4;
 
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.function.BiFunction;
 import java.util.stream.IntStream;
 
 import org.junit.Test;
@@ -230,5 +231,86 @@ public class MockitoTest {
 
         // Side effect -> manipulated captor's stack is empty now!
         assert argumentCaptor.getAllValues().isEmpty();
+    }
+
+    // Demo 8: doAnswer(?)
+    // Define the stubbed method
+    @Test
+    public void mockitoAnswerHandling() {
+        abstract class AbstractInfo { // interface like def.
+            abstract void setEmail(String email);
+            abstract String getEmail();
+            abstract void setName(String name);
+            abstract String getName();
+        }
+        abstract class InfoImpl extends AbstractInfo {
+            private String email;
+            private String name;
+            private InfoImpl(String email) {
+                this.setEmail(email);
+            }
+            @Override
+            final void setName(String name) {
+                this.name = name;
+            }
+            @Override
+            final String getName() {
+                return this.name;
+            }
+        }
+        final class InfoImpl2 extends InfoImpl {
+            private InfoImpl2(String email) {
+                super(email);
+            }
+            @Override
+            final void setEmail(String email) {
+                super.email = email;
+            }
+            @Override
+            final String getEmail() {
+                return super.email;
+            }
+        }
+
+        // Simulate a service
+        final BiFunction<? super AbstractInfo, String, Boolean> mockedService =
+                mock(BiFunction.class);
+
+        doAnswer(invocation -> { // Configure our service
+            // Gather all passed arguments as object array
+            Object[] arguments = invocation.getArguments();
+
+            // Check which method is being invoked here!!
+            // We assume its the setEmail and proceed!!
+            // Check argument types and receiver type (caller)
+            AbstractInfo info = (AbstractInfo) arguments[0];
+            if(info.getEmail().equals(arguments[1]))
+                return false;
+
+            info.setEmail((String) arguments[1]);
+            return true;
+        }).when(mockedService)
+          .apply(any(AbstractInfo.class), anyString());
+
+        final String someEmail_1 = "amir@whatsgames.net";
+        final String someEmail_2 = "lei@whatsgames.net";
+
+        // Equal emails are not allowed and should return false as defined above
+        assert !mockedService.apply(new InfoImpl2(someEmail_1), someEmail_1);
+
+        // Not equal emails are allowed and returns true
+        assert mockedService.apply(new InfoImpl2(someEmail_2), someEmail_1) &&
+               mockedService.apply(new InfoImpl2(someEmail_1), someEmail_2);
+
+        final AbstractInfo mockedInfo =
+                mock(AbstractInfo.class);
+
+        // Configure method with doAnswer
+        // Must be in format doAnswer(?).when(object).objectMethodCall(parameters)
+        doAnswer(__ -> "") .when(mockedInfo).getEmail();
+
+        // .setEmail will be invoked and since its a void its stubbed empty!
+        // .getEmail has been overridden and so that we get "" on invocation
+        assert !mockedService.apply(mockedInfo, "");
     }
 }
